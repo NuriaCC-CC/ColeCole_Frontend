@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conversación sobre una prenda en ColeCole"
+    />
+    <title>Chat | ColeCole</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/chat.css" />
+    <link rel="stylesheet" href="assets/css/desktop_header.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conversation">Saltar a la conversación</a>
+
+    <header class="desktop-site-header">
+      <div class="desktop-header">
+        <a class="brand" href="index.html" aria-label="ColeCole, ir a inicio">
+          <img src="assets/images/colecole_logo.png" alt="ColeCole" />
+        </a>
+
+        <form class="desktop-search" role="search">
+          <div class="desktop-search-field">
+            <label class="visually-hidden" for="desktop-search-input"
+              >Buscar uniforme o una talla</label
+            >
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <input
+              id="desktop-search-input"
+              type="search"
+              name="search"
+              placeholder="Buscar uniforme o una talla"
+            />
+          </div>
+          <span class="search-divider" aria-hidden="true"></span>
+          <button class="school-selector" type="button">
+            <img src="assets/icons/icon_school.png" alt="" />
+            <span>Colegio Padres Blancos</span>
+            <img
+              class="chevron-icon"
+              src="assets/icons/icon_chevron_up.png"
+              alt=""
+            />
+          </button>
+        </form>
+
+        <nav class="desktop-navigation" aria-label="Navegación principal">
+          <button class="header-navigation-item" type="button">
+            <img src="assets/icons/icon_heart.png" alt="" />
+            <span>Favoritos</span>
+          </button>
+          <a class="header-navigation-item" href="cart.html">
+            <span class="desktop-cart-icon">
+              <img src="assets/icons/icon_shop_red.png" alt="" />
+            </span>
+            <span>Carrito</span>
+          </a>
+          <button
+            class="header-navigation-item"
+            type="button"
+            aria-current="page"
+          >
+            <img src="assets/icons/icon_messenger.png" alt="" />
+            <span>Chat</span>
+          </button>
+          <a
+            class="desktop-avatar-link"
+            href="personal_area.html"
+            aria-label="Ver perfil"
+          >
+            <img src="assets/images/avatar.png" alt="" />
+          </a>
+          <a
+            class="button button-primary desktop-publish-button"
+            href="publish.html"
+          >
+            <span>Publicar</span>
+            <img src="assets/icons/icon_plus_transparent.png" alt="" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="chat-page">
+      <h1 class="visually-hidden">Chat con Nuria</h1>
+
+      <header class="chat-header">
+        <a
+          class="icon-button chat-back"
+          href="product_detail.html"
+          aria-label="Volver al detalle de la prenda"
+        >
+          <img src="assets/icons/icon_arrow_left.png" alt="" />
+        </a>
+
+        <div class="profile-user">
+          <img
+            class="chat-avatar"
+            src="assets/images/avatar.png"
+            alt="Foto de Nuria"
+          />
+          <div class="profile-information">
+            <strong>Nuria · 4,9 ★</strong>
+            <span>En línea</span>
+          </div>
+        </div>
+
+        <button
+          class="icon-button more-button"
+          type="button"
+          aria-label="Más opciones"
+        >
+          <img src="assets/icons/icon_more_vertical.png" alt="" />
+        </button>
+      </header>
+
+      <div class="chat-scroll-content" id="conversation">
+        <section
+          class="product-context"
+          aria-labelledby="product-context-title"
+        >
+          <h2 class="visually-hidden" id="product-context-title">
+            Prenda de la conversación
+          </h2>
+          <a class="product-preview" href="product_detail.html">
+            <img
+              class="product-thumbnail"
+              src="assets/images/product/IMG_20260901_165631.jpg"
+              alt="Sudadera burdeos"
+            />
+            <span class="product-information">
+              <strong>Sudadera burdeos</strong>
+              <span>Talla 6 · Como nueva</span>
+              <span>10,00 €</span>
+            </span>
+            <img
+              class="product-chevron"
+              src="assets/icons/icon_chevron_right.png"
+              alt=""
+            />
+          </a>
+
+          <button class="exchange-button" type="button">
+            <span>Proponer intercambio</span>
+            <img src="assets/icons/icon_change_green.png" alt="" />
+          </button>
+        </section>
+
+        <section
+          class="conversation"
+          aria-labelledby="conversation-title"
+        >
+          <h2 class="visually-hidden" id="conversation-title">
+            Mensajes de la conversación
+          </h2>
+          <p class="day-label">Hoy</p>
+
+          <div class="message-row message-row-left">
+            <div class="message-bubble message-bubble-left">
+              <p>Hola, ¿sigue disponible?</p>
+              <span class="message-meta">10:20</span>
+            </div>
+          </div>
+
+          <div class="message-row message-row-right">
+            <div class="message-bubble message-bubble-right">
+              <p>Sí, sigue disponible</p>
+              <span class="message-meta"
+                >10:20
+                <img
+                  src="assets/icons/icon_double_check.png"
+                  alt="Mensaje leído"
+              /></span>
+            </div>
+          </div>
+
+          <div class="message-row message-row-left">
+            <div class="message-bubble message-bubble-left">
+              <p>¿Podríamos quedar mañana?</p>
+              <span class="message-meta">10:21</span>
+            </div>
+          </div>
+
+          <div class="message-row message-row-right">
+            <div class="message-bubble message-bubble-right">
+              <p>Sí, por la tarde me va bien</p>
+              <span class="message-meta"
+                >10:21
+                <img
+                  src="assets/icons/icon_double_check.png"
+                  alt="Mensaje leído"
+              /></span>
+            </div>
+          </div>
+
+          <div class="message-row message-row-left">
+            <div class="message-bubble message-bubble-left">
+              <p>Perfecto, ¿te viene bien a las 18:00?</p>
+              <span class="message-meta">10:30</span>
+            </div>
+          </div>
+
+          <div class="message-row message-row-right">
+            <div class="message-bubble message-bubble-right">
+              <p>Sí, genial</p>
+              <span class="message-meta"
+                >10:31
+                <img
+                  src="assets/icons/icon_double_check.png"
+                  alt="Mensaje leído"
+              /></span>
+            </div>
+          </div>
+
+          <div class="message-row message-row-left">
+            <div class="message-bubble message-bubble-left">
+              <p>Te escribo luego para confirmar</p>
+              <span class="message-meta">10:35</span>
+            </div>
+          </div>
+
+          <div
+            class="message-row message-row-right new-message is-hidden"
+            data-new-message
+          >
+            <div class="message-bubble message-bubble-right">
+              <p data-new-message-text></p>
+              <span class="message-meta"
+                >10:36
+                <img
+                  src="assets/icons/icon_double_check.png"
+                  alt="Mensaje enviado"
+              /></span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <form class="chat-input" data-chat-form>
+        <label class="visually-hidden" for="message-input"
+          >Escribe un mensaje</label
+        >
+        <input
+          id="message-input"
+          name="message"
+          type="text"
+          maxlength="500"
+          placeholder="Escribe un mensaje..."
+          required
+        />
+        <button class="send-button" type="submit" aria-label="Enviar mensaje">
+          <img src="assets/icons/icon_send.png" alt="" />
+        </button>
+      </form>
+    </main>
+
+    <script src="assets/js/chat.js"></script>
+  </body>
+</html>

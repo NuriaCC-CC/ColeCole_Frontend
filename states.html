@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Componente modal reutilizable de ColeCole para estados vacío, error y éxito"
+    />
+    <title>Modales de feedback | ColeCole</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/states.css" />
+  </head>
+  <body>
+    <main class="demo-page">
+      <h1>Modales de feedback</h1>
+      <p>
+        Demo técnica del componente reutilizable. En la web final estos botones
+        se sustituyen por las acciones reales de cada pantalla.
+      </p>
+      <div class="demo-actions" aria-label="Abrir ejemplos de modal">
+        <button class="demo-button" type="button" data-open-modal="empty-modal">
+          Ver Empty
+        </button>
+        <button class="demo-button" type="button" data-open-modal="error-modal">
+          Ver Error
+        </button>
+        <button
+          class="demo-button"
+          type="button"
+          data-open-modal="success-modal"
+        >
+          Ver Success
+        </button>
+      </div>
+    </main>
+
+    <!-- MODAL · EMPTY -->
+    <div class="modal-overlay" id="empty-modal" data-modal hidden>
+      <section
+        class="modal modal--empty"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="empty-title"
+        aria-describedby="empty-description"
+      >
+        <button
+          class="modal-close"
+          type="button"
+          data-close-modal
+          aria-label="Cerrar modal"
+        >
+          <img src="assets/icons/icon_x_transparent.svg" alt="" />
+        </button>
+
+        <div class="modal-icon modal-icon--empty" aria-hidden="true">
+          <img src="assets/icons/icon_magnifying.png" alt="" />
+        </div>
+        <div class="modal-copy">
+          <h2 id="empty-title">No hemos encontrado prendas</h2>
+          <p id="empty-description">
+            Prueba a cambiar o eliminar algunos filtros para ver más resultados.
+          </p>
+        </div>
+        <div class="modal-actions">
+          <button class="button-primary" type="button" data-close-modal>
+            Limpiar filtros
+          </button>
+          <a class="text-link" href="index.html">Volver al catálogo</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL · ERROR -->
+    <div class="modal-overlay" id="error-modal" data-modal hidden>
+      <section
+        class="modal modal--error"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="error-title"
+        aria-describedby="error-description"
+      >
+        <button
+          class="modal-close"
+          type="button"
+          data-close-modal
+          aria-label="Cerrar modal"
+        >
+          <img src="assets/icons/icon_x_transparent.svg" alt="" />
+        </button>
+        <div class="modal-icon modal-icon--error" aria-hidden="true">
+          <img src="assets/icons/icon_error_state.svg" alt="" />
+        </div>
+        <div class="modal-copy">
+          <h2 id="error-title">Algo ha salido mal</h2>
+          <p id="error-description">
+            No hemos podido cargar la información. Inténtalo de nuevo en unos
+            segundos.
+          </p>
+        </div>
+        <div class="modal-actions">
+          <button class="button-primary" type="button" data-close-modal>
+            Intentar de nuevo
+          </button>
+          <a class="text-link" href="index.html">Volver al catálogo</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL · SUCCESS -->
+    <div class="modal-overlay" id="success-modal" data-modal hidden>
+      <section
+        class="modal modal--success"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="success-title"
+        aria-describedby="success-description"
+      >
+        <button
+          class="modal-close"
+          type="button"
+          data-close-modal
+          aria-label="Cerrar modal"
+        >
+          <img src="assets/icons/icon_x_transparent.svg" alt="" />
+        </button>
+        <div class="modal-icon modal-icon--success" aria-hidden="true">
+          <img src="assets/icons/icon_success_state.svg" alt="" />
+        </div>
+        <div class="modal-copy">
+          <h2 id="success-title">¡Prenda publicada!</h2>
+          <p id="success-description">
+            Tu prenda ya está visible para otras familias.
+          </p>
+        </div>
+        <div class="modal-actions">
+          <a class="button-primary" href="personal_area.html"
+            >Ver mi publicación</a
+          >
+          <a class="text-link" href="index.html">Volver al catálogo</a>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/states.js"></script>
+  </body>
+</html>

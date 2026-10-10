@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Compra, vende o intercambia uniformes escolares de segunda mano en ColeCole."
+    />
+    <title>Inicio | ColeCole</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/desktop_header.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <header class="site-header">
+      <div class="mobile-header">
+        <div class="mobile-greeting">
+          <img
+            class="mobile-avatar"
+            src="assets/images/avatar.png"
+            alt="Foto de perfil"
+          />
+          <p class="mobile-greeting-text">
+            <strong>¡Hola familia!</strong>
+            <span>¿Qué necesitas buscar hoy?</span>
+          </p>
+          <a
+            class="icon-button cart-button"
+            href="cart.html"
+            aria-label="Ver carrito"
+          >
+            <img src="assets/icons/icon_shop_red.png" alt="" />
+          </a>
+        </div>
+
+        <form class="mobile-search" role="search">
+          <label class="visually-hidden" for="mobile-search-input"
+            >Buscar uniforme</label
+          >
+          <img src="assets/icons/icon_magnifying.png" alt="" />
+          <input
+            id="mobile-search-input"
+            type="search"
+            name="search"
+            placeholder="Buscar uniforme"
+          />
+        </form>
+
+        <div class="mobile-actions">
+          <button
+            class="button button-outline filter-search-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="category-filters"
+          >
+            <span>Filtrar búsqueda</span>
+            <img src="assets/icons/icon_filter_primary_500.png" alt="" />
+          </button>
+          <a class="button button-primary" href="publish.html">
+            <span>Publicar</span>
+            <img src="assets/icons/icon_plus_transparent.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="desktop-header">
+        <a class="brand" href="index.html" aria-label="ColeCole, ir a inicio">
+          <img src="assets/images/colecole_logo.png" alt="ColeCole" />
+        </a>
+
+        <form class="desktop-search" role="search">
+          <div class="desktop-search-field">
+            <label class="visually-hidden" for="desktop-search-input">
+              Buscar uniforme o una talla
+            </label>
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <input
+              id="desktop-search-input"
+              type="search"
+              name="search"
+              placeholder="Buscar uniforme o una talla"
+            />
+          </div>
+          <span class="search-divider" aria-hidden="true"></span>
+          <button class="school-selector" type="button">
+            <img src="assets/icons/icon_school.png" alt="" />
+            <span>Colegio Padres Blancos</span>
+            <img
+              class="chevron-icon"
+              src="assets/icons/icon_chevron_up.png"
+              alt=""
+            />
+          </button>
+        </form>
+
+        <nav class="desktop-navigation" aria-label="Navegación principal">
+          <a href="#catalog">
+            <img src="assets/icons/icon_heart.png" alt="" />
+            <span>Favoritos</span>
+          </a>
+          <a class="desktop-cart-link" href="cart.html">
+            <span class="desktop-cart-icon">
+              <img src="assets/icons/icon_shop_red.png" alt="" />
+            </span>
+            <span>Carrito</span>
+          </a>
+          <a href="chat.html">
+            <img src="assets/icons/icon_messenger.png" alt="" />
+            <span>Chat</span>
+          </a>
+          <a
+            class="desktop-avatar-link"
+            href="personal_area.html"
+            aria-label="Ver perfil"
+          >
+            <img src="assets/images/avatar.png" alt="" />
+          </a>
+          <a
+            class="button button-primary desktop-publish-button"
+            href="publish.html"
+          >
+            <span>Publicar</span>
+            <img src="assets/icons/icon_plus_transparent.png" alt="" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <h1 class="visually-hidden mobile-page-title">Inicio de ColeCole</h1>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h2 id="hero-title">
+            Uniformes que<br />
+            siguen <span>su historia.</span>
+          </h2>
+          <p>
+            Compra, vende o intercambia uniformes escolares de segunda mano de
+            forma fácil, segura y sostenible.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#catalog">Ver prendas</a>
+            <button class="button button-outline" type="button">
+              Cómo funciona
+            </button>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img
+            class="hero-image"
+            src="assets/images/product/uniformes_hero.png"
+            alt="Selección de uniformes escolares de distintos colegios"
+          />
+          <button
+            class="hero-close"
+            type="button"
+            aria-label="Cerrar presentación"
+          >
+            <img src="assets/icons/icon_x_transparent.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <nav
+        class="category-navigation"
+        id="category-filters"
+        aria-label="Categorías de prendas"
+      >
+        <button
+          class="category-button is-selected"
+          type="button"
+          aria-pressed="true"
+        >
+          <span>Todas</span>
+          <img src="assets/icons/icon_grid_transparent.svg" alt="" />
+        </button>
+        <button class="category-button" type="button" aria-pressed="false">
+          <span>Polos</span>
+          <img src="assets/icons/icon_shirt_primary_500.png" alt="" />
+        </button>
+        <button class="category-button" type="button" aria-pressed="false">
+          <span>Pantalones</span>
+          <img src="assets/icons/icon_pants_primary_500.png" alt="" />
+        </button>
+        <button class="category-button" type="button" aria-pressed="false">
+          <span>Faldas</span>
+          <img src="assets/icons/icon_skirt_primary_500.png" alt="" />
+        </button>
+        <button
+          class="category-button"
+          type="button"
+          aria-pressed="false"
+          aria-haspopup="dialog"
+          data-open-modal="empty-results-modal"
+        >
+          <span>Abrigos</span>
+          <img src="assets/icons/icon_jacket_primary_500.png" alt="" />
+        </button>
+        <button class="category-button" type="button" aria-pressed="false">
+          <span>Sudaderas</span>
+          <img src="assets/icons/icon_hoodie_primary_500.png" alt="" />
+        </button>
+        <button class="category-button" type="button" aria-pressed="false">
+          <span>Libros</span>
+          <img src="assets/icons/icon_book_primary_500.png" alt="" />
+        </button>
+        <button class="category-button" type="button" aria-pressed="false">
+          <span>Accesorios</span>
+          <img src="assets/icons/icon_accessories_primary_500.png" alt="" />
+        </button>
+      </nav>
+
+      <section class="desktop-filters" aria-label="Filtros de búsqueda">
+        <h2 class="visually-hidden">Filtros de búsqueda</h2>
+        <div class="size-filter">
+          <button
+            class="size-filter-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="size-dropdown"
+          >
+            <span data-size-label>Talla</span>
+            <img src="assets/icons/icon_chevron_secondary_600.png" alt="" />
+          </button>
+          <div class="size-dropdown" id="size-dropdown" hidden>
+            <button class="size-option" type="button" data-size="4 años">
+              4 años
+            </button>
+            <button class="size-option" type="button" data-size="6 años">
+              6 años
+            </button>
+            <button class="size-option" type="button" data-size="8 años">
+              8 años
+            </button>
+            <button class="size-option" type="button" data-size="10 años">
+              10 años
+            </button>
+            <button class="size-option" type="button" data-size="12 años">
+              12 años
+            </button>
+            <button class="size-option" type="button" data-size="S">S</button>
+            <button class="size-option" type="button" data-size="M">M</button>
+            <button class="size-option" type="button" data-size="L">L</button>
+          </div>
+        </div>
+        <button class="desktop-filter-college" type="button">
+          <span>Colegio</span>
+          <img src="assets/icons/icon_chevron_secondary_600.png" alt="" />
+        </button>
+        <button class="desktop-filter-state" type="button">
+          <span>Estado</span>
+          <img src="assets/icons/icon_chevron_secondary_600.png" alt="" />
+        </button>
+        <button class="desktop-filter-exchange" type="button">
+          <span>Intercambio o venta</span>
+          <img src="assets/icons/icon_chevron_secondary_600.png" alt="" />
+        </button>
+        <button class="desktop-filter-sort" type="button">
+          <span>Ordenar por</span>
+          <img src="assets/icons/icon_chevron_secondary_600.png" alt="" />
+        </button>
+      </section>
+
+      <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+        <div class="catalog-heading">
+          <h2 id="catalog-title">Recién añadidos</h2>
+          <a href="#catalog">Ver todos (114)</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <a href="loading.html" aria-label="Ver Sudadera burdeos">
+                <img
+                  class="product-image"
+                  src="assets/images/product/IMG_20260901_165643.jpg"
+                  alt="Sudadera burdeos del Colegio Padres Blancos"
+                />
+              </a>
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Añadir Sudadera burdeos a favoritos"
+                aria-pressed="false"
+              >
+                <img src="assets/icons/icon_heart.png" alt="" />
+              </button>
+              <span class="offer-tag price-tag">€ 10,00</span>
+            </div>
+            <div class="product-info">
+              <h3><a href="loading.html">Sudadera burdeos</a></h3>
+              <p>Colegio Padres Blancos</p>
+              <ul class="product-labels" aria-label="Características">
+                <li>Talla 6</li>
+                <li>Como nueva</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-image-frame">
+                <img
+                  class="product-image"
+                  src="assets/images/product/02_camiseta.webp"
+                  alt="Camiseta blanca de manga corta del Colegio Padres Blancos"
+                />
+              </div>
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Añadir Camiseta manga corta blanca a favoritos"
+                aria-pressed="false"
+              >
+                <img src="assets/icons/icon_heart.png" alt="" />
+              </button>
+              <span class="offer-tag exchange-tag">
+                <img src="assets/icons/icon_change_green.png" alt="" />
+                Intercambio
+              </span>
+            </div>
+            <div class="product-info">
+              <h3>Camiseta manga corta blanca.</h3>
+              <p>Colegio Padres Blancos</p>
+              <ul class="product-labels" aria-label="Características">
+                <li>Talla S</li>
+                <li>Buen estado</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-image-frame">
+                <img
+                  class="product-image"
+                  src="assets/images/product/02_camiseta.webp"
+                  alt="Camiseta blanca del Colegio Padres Blancos"
+                />
+              </div>
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Añadir Camiseta blanca talla 12 a favoritos"
+                aria-pressed="false"
+              >
+                <img src="assets/icons/icon_heart.png" alt="" />
+              </button>
+              <span class="offer-tag exchange-tag">
+                <img src="assets/icons/icon_change_green.png" alt="" />
+                Intercambio
+              </span>
+            </div>
+            <div class="product-info">
+              <h3>Camiseta blanca</h3>
+              <p>Colegio Padres Blancos</p>
+              <ul class="product-labels" aria-label="Características">
+                <li>Talla 12</li>
+                <li>Como nuevo</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <a
+                href="error_state.html"
+                aria-label="Ver Camiseta roja"
+                aria-haspopup="dialog"
+                data-open-modal="product-error-modal"
+              >
+                <img
+                  class="product-image"
+                  src="assets/images/product/06_uniforme.webp"
+                  alt="Camiseta roja del Colegio Padres Blancos"
+                />
+              </a>
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Añadir Camiseta roja a favoritos"
+                aria-pressed="false"
+              >
+                <img src="assets/icons/icon_heart.png" alt="" />
+              </button>
+              <span class="offer-tag price-tag">€ 10,00</span>
+            </div>
+            <div class="product-info">
+              <h3>
+                <a
+                  href="error_state.html"
+                  aria-haspopup="dialog"
+                  data-open-modal="product-error-modal"
+                  >Camiseta roja</a
+                >
+              </h3>
+              <p>Colegio Padres Blancos</p>
+              <ul class="product-labels" aria-label="Características">
+                <li>Talla 6</li>
+                <li>Usada</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-image-frame">
+                <img
+                  class="product-image"
+                  src="assets/images/product/07_pantalon_equipacion_detalle.webp"
+                  alt="Pantalón rojo de fútbol del Colegio Padres Blancos"
+                />
+              </div>
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Añadir Pantalón de fútbol a favoritos"
+                aria-pressed="false"
+              >
+                <img src="assets/icons/icon_heart.png" alt="" />
+              </button>
+              <span class="offer-tag price-tag">€ 3,00</span>
+            </div>
+            <div class="product-info">
+              <h3>Pantalón de fútbol</h3>
+              <p>Colegio Padres Blancos</p>
+              <ul class="product-labels" aria-label="Características">
+                <li>Talla 4</li>
+                <li>Muy usado</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-image-frame">
+                <img
+                  class="product-image"
+                  src="assets/images/product/08_camiseta_detalle.webp"
+                  alt="Detalle de camiseta blanca del Colegio Padres Blancos"
+                />
+              </div>
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Añadir Camiseta blanca talla 4 a favoritos"
+                aria-pressed="false"
+              >
+                <img src="assets/icons/icon_heart.png" alt="" />
+              </button>
+              <span class="offer-tag exchange-tag">
+                <img src="assets/icons/icon_change_green.png" alt="" />
+                Intercambio
+              </span>
+            </div>
+            <div class="product-info">
+              <h3>Camiseta blanca</h3>
+              <p>Colegio Padres Blancos</p>
+              <ul class="product-labels" aria-label="Características">
+                <li>Talla 4</li>
+                <li>Como nueva</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-image-frame">
+                <img
+                  class="product-image"
+                  src="assets/images/product/04_calzona.webp"
+                  alt="Pantalón corto del Colegio Padres Blancos"
+                />
+              </div>
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Añadir Pantalón corto a favoritos"
+                aria-pressed="false"
+              >
+                <img src="assets/icons/icon_heart.png" alt="" />
+              </button>
+              <span class="offer-tag exchange-tag">
+                <img src="assets/icons/icon_change_green.png" alt="" />
+                Intercambio
+              </span>
+            </div>
+            <div class="product-info">
+              <h3>Pantalón corto</h3>
+              <p>Colegio Padres Blancos</p>
+              <ul class="product-labels" aria-label="Características">
+                <li>Talla 4</li>
+                <li>Como nuevo</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-image-frame">
+                <img
+                  class="product-image"
+                  src="assets/images/product/05_maillot.webp"
+                  alt="Maillot del Colegio Padres Blancos"
+                />
+              </div>
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Añadir Maillot a favoritos"
+                aria-pressed="false"
+              >
+                <img src="assets/icons/icon_heart.png" alt="" />
+              </button>
+              <span class="offer-tag price-tag">€ 5,00</span>
+            </div>
+            <div class="product-info">
+              <h3>Maillot</h3>
+              <p>Colegio Padres Blancos</p>
+              <ul class="product-labels" aria-label="Características">
+                <li>Talla 6</li>
+                <li>Como nuevo</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="desktop-footer">
+      <div class="footer-social" aria-label="Redes sociales">
+        <a href="#" aria-label="Instagram">
+          <img src="assets/icons/icon_instagram.png" alt="" />
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img src="assets/icons/icon_facebook.png" alt="" />
+        </a>
+      </div>
+
+      <nav class="footer-navigation" aria-label="Enlaces del pie de página">
+        <span>Términos y condiciones</span>
+        <span>Política de privacidad</span>
+        <span>Ayuda</span>
+        <span>Sobre Colecole</span>
+      </nav>
+
+      <p>2026 © colecole</p>
+    </footer>
+
+    <nav class="mobile-bottom-navigation" aria-label="Navegación móvil">
+      <a class="is-current" href="index.html" aria-current="page">
+        <img src="assets/icons/icon_house.png" alt="" />
+        <span>Inicio</span>
+      </a>
+      <a href="#catalog">
+        <img src="assets/icons/icon_magnifying.png" alt="" />
+        <span>Buscar</span>
+      </a>
+      <a href="publish.html">
+        <img src="assets/icons/icon_plus_transparent.png" alt="" />
+        <span>Publicar</span>
+      </a>
+      <a href="chat.html">
+        <img src="assets/icons/icon_messenger.png" alt="" />
+        <span>Chat</span>
+      </a>
+      <a href="personal_area.html">
+        <img src="assets/icons/icon_user.png" alt="" />
+        <span>Perfil</span>
+      </a>
+    </nav>
+
+    <div
+      class="catalog-modal-overlay"
+      id="empty-results-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="empty-results-title"
+      hidden
+      data-modal
+    >
+      <section class="catalog-modal catalog-modal--empty">
+        <button
+          class="catalog-modal-close"
+          type="button"
+          aria-label="Cerrar"
+          data-close-modal
+        >
+          <img src="assets/icons/icon_x_transparent.svg" alt="" />
+        </button>
+        <img
+          class="catalog-modal-icon"
+          src="assets/icons/icon_magnifying.png"
+          alt=""
+        />
+        <div class="catalog-modal-body">
+          <div class="catalog-modal-copy">
+            <h2 id="empty-results-title">No hemos encontrado prendas</h2>
+            <p>
+              Prueba a cambiar o eliminar algunos filtros para ver más
+              resultados
+            </p>
+          </div>
+          <div class="catalog-modal-actions">
+            <button
+              class="catalog-modal-primary"
+              type="button"
+              data-clear-filters
+              data-close-modal
+            >
+              Limpiar filtros
+            </button>
+            <a class="catalog-modal-link" href="#catalog" data-close-modal>
+              Volver al catálogo
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="catalog-modal-overlay"
+      id="product-error-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="product-error-title"
+      hidden
+      data-modal
+    >
+      <section class="catalog-modal catalog-modal--error">
+        <button
+          class="catalog-modal-close"
+          type="button"
+          aria-label="Cerrar"
+          data-close-modal
+        >
+          <img src="assets/icons/icon_x_transparent.svg" alt="" />
+        </button>
+        <img
+          class="catalog-modal-icon"
+          src="assets/icons/icon_error_state.svg"
+          alt=""
+        />
+        <div class="catalog-modal-body">
+          <div class="catalog-modal-copy">
+            <h2 id="product-error-title">Algo ha salido mal</h2>
+            <p>
+              No hemos podido cargar la información. Inténtalo de nuevo en unos
+              segundos
+            </p>
+          </div>
+          <div class="catalog-modal-actions">
+            <button
+              class="catalog-modal-primary"
+              type="button"
+              data-close-modal
+            >
+              Reintentar
+            </button>
+            <a class="catalog-modal-link" href="#catalog" data-close-modal>
+              Volver al catálogo
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/states.js"></script>
+  </body>
+</html>

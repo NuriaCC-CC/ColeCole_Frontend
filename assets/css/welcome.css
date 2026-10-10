@@ -1,0 +1,167 @@
+/* Pantalla de bienvenida de ColeCole: estilos mobile-first. */
+
+/* Estilos generales */
+
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  color: var(--primary-900);
+  background: var(--base-white);
+  font-family: var(--font-family);
+}
+
+/* Contenedor principal */
+.welcome-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-6) var(--spacing-7);
+  background-image: url("../images/new_background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome-card {
+  width: 100%;
+  max-width: 338px;
+  min-height: 484px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-6) var(--spacing-7);
+  text-align: center;
+  background: var(--neutral-50);
+  border: 1px solid var(--primary-400);
+  border-radius: var(--radius-xl);
+}
+
+.welcome-logo {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+/* Textos de bienvenida */
+.welcome-copy {
+  width: 100%;
+  min-height: 196px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-5);
+}
+
+.welcome-copy h1,
+.welcome-copy p {
+  width: 100%;
+  margin: 0;
+  color: var(--primary-900);
+}
+
+.welcome-copy h1 {
+  min-height: 96px;
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading-2);
+  letter-spacing: var(--letter-spacing-heading);
+}
+
+.welcome-copy p {
+  min-height: 84px;
+  font-size: var(--font-size-heading-3);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-heading-3);
+}
+
+/* Botones de acceso */
+.welcome-actions {
+  width: 100%;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-4);
+}
+
+.welcome-button {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-7);
+  color: var(--primary-50);
+  background: var(--primary-500);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-body-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-body-base);
+  text-decoration: none;
+  transition: background-color 200ms ease, transform 100ms ease;
+}
+
+/* Estados e interacciones */
+.welcome-button:hover {
+  background: var(--primary-600);
+}
+
+.welcome-button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.welcome-button:active {
+  background: var(--primary-700);
+  transform: scale(0.99);
+}
+
+/* Responsive desktop */
+@media (min-width: 1024px) {
+  .welcome-page {
+    padding: var(--spacing-6);
+  }
+
+  .welcome-card {
+    max-width: 520px;
+    height: 424px;
+    min-height: 0;
+    padding: var(--spacing-6);
+    background: var(--primary-50);
+    border-color: var(--primary-200);
+  }
+
+  .welcome-copy {
+    height: 136px;
+    min-height: 0;
+  }
+
+  .welcome-copy h1,
+  .welcome-copy p {
+    color: var(--base-black);
+  }
+
+  .welcome-copy h1 {
+    height: 64px;
+    min-height: 0;
+  }
+
+  .welcome-copy p {
+    height: 56px;
+    min-height: 0;
+  }
+
+  .welcome-actions {
+    height: 108px;
+  }
+}

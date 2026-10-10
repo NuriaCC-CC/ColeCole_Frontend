@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Estado de carga del detalle de producto en ColeCole"
+    />
+    <title>Cargando prenda | ColeCole</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/loading.css" />
+    <link rel="stylesheet" href="assets/css/desktop_header.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#loading-content">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="mobile-header">
+        <div class="mobile-header-row">
+          <a
+            class="icon-button"
+            href="index.html"
+            aria-label="Volver al catálogo"
+          >
+            <img src="assets/icons/icon_arrow_left.png" alt="" />
+          </a>
+          <form class="mobile-search" role="search">
+            <label class="visually-hidden" for="loading-mobile-search"
+              >Buscar uniforme</label
+            >
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <input
+              id="loading-mobile-search"
+              type="search"
+              name="search"
+              placeholder="Buscar uniforme"
+            />
+          </form>
+          <a
+            class="icon-button cart-button"
+            href="cart.html"
+            aria-label="Ver carrito"
+          >
+            <img src="assets/icons/icon_shop_red.png" alt="" />
+          </a>
+          <button class="icon-button" type="button" aria-label="Abrir menú">
+            <img src="assets/icons/icon_hamburger.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="desktop-header">
+        <a class="brand" href="index.html" aria-label="ColeCole, ir a inicio">
+          <img src="assets/images/colecole_logo.png" alt="ColeCole" />
+        </a>
+        <form class="desktop-search" role="search">
+          <div class="desktop-search-field">
+            <label class="visually-hidden" for="loading-desktop-search"
+              >Buscar uniforme o una talla</label
+            >
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <input
+              id="loading-desktop-search"
+              type="search"
+              name="search"
+              placeholder="Buscar uniforme o una talla"
+            />
+          </div>
+          <span class="search-divider" aria-hidden="true"></span>
+          <button class="school-selector" type="button">
+            <img src="assets/icons/icon_school.png" alt="" />
+            <span>Colegio Padres Blancos</span>
+            <img
+              class="chevron-icon"
+              src="assets/icons/icon_chevron_up.png"
+              alt=""
+            />
+          </button>
+        </form>
+        <nav class="desktop-navigation" aria-label="Navegación principal">
+          <button class="header-navigation-item" type="button">
+            <img src="assets/icons/icon_heart.png" alt="" />
+            <span>Favoritos</span>
+          </button>
+          <a class="header-navigation-item" href="cart.html">
+            <span class="desktop-cart-icon">
+              <img src="assets/icons/icon_shop_red.png" alt="" />
+            </span>
+            <span>Carrito</span>
+          </a>
+          <a class="header-navigation-item" href="chat.html">
+            <img src="assets/icons/icon_messenger.png" alt="" />
+            <span>Chat</span>
+          </a>
+          <a
+            class="desktop-avatar-link"
+            href="personal_area.html"
+            aria-label="Ver perfil"
+          >
+            <img src="assets/images/avatar.png" alt="" />
+          </a>
+          <a
+            class="button button-primary desktop-publish-button"
+            href="publish.html"
+          >
+            <span>Publicar</span>
+            <img src="assets/icons/icon_plus_transparent.png" alt="" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      class="loading-content"
+      id="loading-content"
+      aria-busy="true"
+      aria-label="Cargando detalle de producto"
+    >
+      <h1 class="visually-hidden">Cargando detalle de producto</h1>
+      <p class="visually-hidden" role="status" aria-live="polite">
+        Cargando detalle de producto…
+      </p>
+
+      <div class="loading-layout" aria-hidden="true">
+        <div class="gallery-skeleton">
+          <div class="skeleton gallery-main"></div>
+          <div class="carousel-indicator">
+            <span class="is-active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="gallery-thumbnails">
+            <div class="skeleton gallery-thumbnail"></div>
+            <div class="skeleton gallery-thumbnail"></div>
+            <div class="skeleton gallery-thumbnail"></div>
+            <div class="skeleton gallery-thumbnail"></div>
+          </div>
+        </div>
+
+        <div class="mobile-summary-actions">
+          <span class="skeleton"></span>
+          <span class="skeleton"></span>
+        </div>
+
+        <aside class="right-column-skeleton">
+          <div class="profile-skeleton">
+            <span class="skeleton profile-avatar"></span>
+            <span class="profile-lines">
+              <span class="skeleton profile-name"></span>
+              <span class="skeleton profile-detail"></span>
+            </span>
+          </div>
+
+          <div class="product-panel-skeleton">
+            <div class="product-information-skeleton">
+              <div class="product-summary-skeleton">
+                <span class="skeleton product-title"></span>
+                <span class="skeleton product-price"></span>
+                <span class="product-tags">
+                  <span class="skeleton"></span>
+                  <span class="skeleton"></span>
+                  <span class="skeleton"></span>
+                </span>
+              </div>
+              <div class="information-line">
+                <span class="skeleton information-icon"></span>
+                <span class="skeleton information-text"></span>
+              </div>
+              <span class="skeleton description-line"></span>
+              <span class="skeleton-divider"></span>
+              <div class="information-line delivery-line">
+                <span class="skeleton information-icon"></span>
+                <span class="skeleton information-text"></span>
+              </div>
+            </div>
+
+            <div class="desktop-product-actions">
+              <span class="skeleton"></span>
+              <span class="skeleton"></span>
+              <span class="skeleton"></span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="mobile-product-actions">
+          <span class="skeleton"></span>
+          <span class="skeleton"></span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

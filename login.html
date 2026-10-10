@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inicia sesión en ColeCole para comprar, vender o intercambiar uniformes escolares."
+    />
+    <title>Iniciar sesión | ColeCole</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <div class="login-card">
+        <section class="login-hero" aria-labelledby="login-hero-title">
+          <div class="login-hero-content">
+            <div class="login-hero-text">
+              <h1 id="login-hero-title">
+                Dale una nueva vida a los uniformes escolares
+              </h1>
+              <p>
+                Compra, vende o intercambia uniformes<br />de tu colegio de
+                forma sencilla
+              </p>
+            </div>
+
+            <img
+              class="login-illustration"
+              src="assets/images/colecole_login_composition_left_transparent.png"
+              alt="Mochila y prendas de uniforme escolar reutilizables"
+            />
+          </div>
+
+          <ul class="login-benefits">
+            <li>
+              <img src="assets/icons/icon_euro.png" alt="" />
+              <div>
+                <strong>Ahorra dinero</strong>
+                <p>Precios asequibles para todas las familias.</p>
+              </div>
+            </li>
+            <li>
+              <img src="assets/icons/icon_recycle.png" alt="" />
+              <div>
+                <strong>Un futuro más sostenible</strong>
+                <p>Dale una segunda vida a los uniformes escolares.</p>
+              </div>
+            </li>
+            <li>
+              <img src="assets/icons/icon_people.png" alt="" />
+              <div>
+                <strong>Comunidad</strong>
+                <p>Conecta con otras familias de tu colegio.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="login-form-wrapper" aria-labelledby="login-title">
+          <header class="login-header">
+            <h2 id="login-title">¡Bienvenido de nuevo!</h2>
+            <p>Accede a tu cuenta para continuar.</p>
+          </header>
+
+          <form id="login-form" class="login-form" novalidate>
+            <div class="login-fields">
+              <div class="form-group">
+                <label for="email">
+                  <span>Email</span>
+                  <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="nombre@email.com"
+                  autocomplete="email"
+                  aria-describedby="login-error"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="password">
+                  <span>Contraseña</span>
+                  <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="password-field">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="introduce tu contraseña"
+                    autocomplete="current-password"
+                    aria-describedby="login-error"
+                    required
+                  />
+                  <button
+                    id="toggle-password"
+                    class="password-toggle"
+                    type="button"
+                    aria-label="Mostrar contraseña"
+                  >
+                    <img id="eye-icon" src="assets/icons/icon_eye.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <p class="login-error" id="login-error" role="alert" hidden></p>
+
+            <div class="login-actions">
+              <a class="forgot-password" href="#"
+                >¿Has olvidado tu contraseña?</a
+              >
+
+              <button class="login-button" type="submit">Iniciar sesión</button>
+
+              <div class="login-divider" aria-hidden="true">
+                <span></span>
+                <p>o continúa con</p>
+                <span></span>
+              </div>
+
+              <button id="btn-google" class="google-button" type="button">
+                <img src="assets/icons/icon_google.png" alt="" />
+                <span>Continuar con Google</span>
+              </button>
+
+              <p class="create-account">
+                ¿No tienes cuenta? <a href="signing.html">Crear una nueva</a>
+              </p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>

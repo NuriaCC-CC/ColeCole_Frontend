@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Formulario para publicar un uniforme en ColeCole."
+    />
+    <title>Publicar un uniforme | ColeCole</title>
+    <link rel="icon" type="image/png" href="assets/images/colecole_logo.png" />
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/publish.css" />
+    <link rel="stylesheet" href="assets/css/desktop_header.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#publish-form"
+      >Saltar al formulario de publicación</a
+    >
+
+    <div class="publish-page">
+      <header class="site-header">
+        <div class="mobile-header">
+          <div class="mobile-header-row">
+            <button
+              class="icon-button back-button"
+              type="button"
+              aria-label="Volver"
+            >
+              <img src="assets/icons/icon_arrow_left.png" alt="" />
+            </button>
+            <form class="mobile-search" role="search">
+              <label class="visually-hidden" for="publish-mobile-search"
+                >Buscar uniforme</label
+              >
+              <img src="assets/icons/icon_magnifying.png" alt="" />
+              <input
+                id="publish-mobile-search"
+                type="search"
+                name="search"
+                placeholder="Buscar uniforme"
+              />
+            </form>
+            <a
+              class="icon-button cart-button"
+              href="cart.html"
+              aria-label="Ver carrito"
+            >
+              <img src="assets/icons/icon_shop_red.png" alt="" />
+            </a>
+            <button
+              class="icon-button menu-button"
+              type="button"
+              aria-label="Abrir menú"
+            >
+              <img src="assets/icons/icon_hamburger.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="desktop-header">
+          <a class="brand" href="index.html" aria-label="ColeCole, ir a inicio">
+            <img src="assets/images/colecole_logo.png" alt="ColeCole" />
+          </a>
+          <form class="desktop-search" role="search">
+            <div class="desktop-search-field">
+              <label class="visually-hidden" for="publish-desktop-search"
+                >Buscar uniforme o una talla</label
+              >
+              <img src="assets/icons/icon_magnifying.png" alt="" />
+              <input
+                id="publish-desktop-search"
+                type="search"
+                name="search"
+                placeholder="Buscar uniforme o una talla"
+              />
+            </div>
+            <span class="search-divider" aria-hidden="true"></span>
+            <button class="school-selector" type="button">
+              <img src="assets/icons/icon_school.png" alt="" />
+              <span>Colegio Padres Blancos</span>
+              <img
+                class="chevron-icon"
+                src="assets/icons/icon_chevron_up.png"
+                alt=""
+              />
+            </button>
+          </form>
+          <nav class="desktop-navigation" aria-label="Navegación principal">
+            <button
+              class="header-navigation-item favorites-navigation"
+              type="button"
+            >
+              <img src="assets/icons/icon_heart.png" alt="" />
+              <span>Favoritos</span>
+            </button>
+            <a class="header-navigation-item cart-navigation" href="cart.html">
+              <span class="desktop-cart-icon">
+                <img src="assets/icons/icon_shop_red.png" alt="" />
+              </span>
+              <span>Carrito</span>
+            </a>
+            <button
+              class="header-navigation-item chat-navigation"
+              type="button"
+            >
+              <img src="assets/icons/icon_messenger.png" alt="" />
+              <span>Chat</span>
+            </button>
+            <a
+              class="desktop-avatar-link"
+              href="personal_area.html"
+              aria-label="Ver perfil"
+            >
+              <img src="assets/images/avatar.png" alt="" />
+            </a>
+            <a
+              class="button button-primary desktop-publish-button"
+              href="#publish-form"
+              aria-current="page"
+            >
+              <span>Publicar</span>
+              <img src="assets/icons/icon_plus_transparent.png" alt="" />
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="publish-content">
+        <header class="publish-heading">
+          <h1>
+            <span class="mobile-title">Publicar uniforme</span
+            ><span class="desktop-title">Publicar un uniforme</span>
+          </h1>
+          <p>Completa la información para publicar tu uniforme</p>
+        </header>
+
+        <form class="publish-form" id="publish-form">
+          <section class="photos-section" aria-labelledby="photos-title">
+            <h2 id="photos-title">Fotos</h2>
+            <div
+              class="photo-card"
+              aria-label="Área visual para añadir fotografías"
+            >
+              <div class="photo-empty-area">
+                <img src="assets/icons/icon_photo.png" alt="" />
+                <div class="photo-text">
+                  <strong>Añadir fotos</strong>
+                  <span>Puedes añadir hasta 5 fotos</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="form-column">
+            <div class="form-fields">
+              <div class="field">
+                <label for="garment-name"
+                  >Nombre de la prenda
+                  <span class="required-mark" aria-hidden="true">*</span></label
+                >
+                <input
+                  id="garment-name"
+                  name="garment-name"
+                  type="text"
+                  placeholder="Sudadera burdeos"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="school"
+                  >Colegio
+                  <span class="required-mark" aria-hidden="true">*</span></label
+                >
+                <select id="school" name="school" required>
+                  <option value="padres-blancos">Padres Blancos</option>
+                  <option value="salesianos">Salesianos</option>
+                  <option value="irlandesas">Irlandesas</option>
+                  <option value="maristas">Maristas</option>
+                  <option value="claret">Claret</option>
+                  <option value="santa-ana">Santa Ana</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="garment-type"
+                  >Tipo de prenda
+                  <span class="required-mark" aria-hidden="true">*</span></label
+                >
+                <select id="garment-type" name="garment-type" required>
+                  <option value="sudadera">Sudadera</option>
+                  <option value="polo">Polo</option>
+                  <option value="pantalon">Pantalón</option>
+                  <option value="falda">Falda</option>
+                  <option value="abrigo">Abrigo</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="size"
+                  >Talla
+                  <span class="required-mark" aria-hidden="true">*</span></label
+                >
+                <select id="size" name="size" required>
+                  <option value="6">6 años</option>
+                  <option value="4">4 años</option>
+                  <option value="8">8 años</option>
+                  <option value="10">10 años</option>
+                  <option value="12">12 años</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="condition"
+                  >Estado
+                  <span class="required-mark" aria-hidden="true">*</span></label
+                >
+                <select id="condition" name="condition" required>
+                  <option value="como-nuevo">Como nuevo</option>
+                  <option value="nuevo">Nuevo</option>
+                  <option value="buen-estado">Buen estado</option>
+                  <option value="usado">Usado</option>
+                  <option value="muy-usado">Muy usado</option>
+                </select>
+              </div>
+
+              <div class="field price-field">
+                <label for="price"
+                  >Precio
+                  <span class="required-mark" aria-hidden="true">*</span></label
+                >
+                <input
+                  id="price"
+                  name="price"
+                  type="text"
+                  inputmode="decimal"
+                  placeholder="10,00€"
+                  required
+                />
+                <small>Solo es necesario si marcas VENTA</small>
+              </div>
+
+              <div class="field description-field">
+                <span class="description-label">
+                  <label for="description">Descripción</label>
+                  <span id="description-counter">(0/100)</span>
+                </span>
+                <textarea
+                  id="description"
+                  name="description"
+                  maxlength="100"
+                  placeholder="Sudadera burdeos en perfecto estado, solo usada pocas veces."
+                ></textarea>
+              </div>
+            </div>
+
+            <fieldset class="offer-type">
+              <legend>
+                ¿Ofreces intercambio?
+                <span class="required-mark" aria-hidden="true">*</span>
+              </legend>
+              <label class="exchange-option" for="exchange">
+                <input id="exchange" name="exchange" type="checkbox" required />
+                <span>Sí, acepto intercambio</span>
+              </label>
+            </fieldset>
+
+            <div class="publish-actions">
+              <button class="form-button draft-button" type="button">
+                Guardar borrador
+              </button>
+              <button class="form-button publish-button" type="submit">
+                Publicar
+              </button>
+            </div>
+          </div>
+        </form>
+      </main>
+
+      <nav class="mobile-bottom-navigation" aria-label="Navegación inferior">
+        <a href="index.html"
+          ><img src="assets/icons/icon_house.png" alt="" /><span
+            >Inicio</span
+          ></a
+        >
+        <a href="index.html#catalog"
+          ><img src="assets/icons/icon_magnifying.png" alt="" /><span
+            >Buscar</span
+          ></a
+        >
+        <a class="is-current" href="#publish-form" aria-current="page">
+          <img src="assets/icons/icon_plus_transparent.png" alt="" /><span
+            >Publicar</span
+          >
+        </a>
+        <button type="button">
+          <img src="assets/icons/icon_messenger.png" alt="" /><span>Chat</span>
+        </button>
+        <a href="personal_area.html"
+          ><img src="assets/icons/icon_user.png" alt="" /><span>Perfil</span></a
+        >
+      </nav>
+    </div>
+
+    <div
+      class="modal-overlay"
+      id="publication-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="publication-modal-title"
+      aria-hidden="true"
+    >
+      <section class="publication-modal">
+        <button
+          class="modal-close-button"
+          type="button"
+          aria-label="Cerrar confirmación"
+        >
+          <img src="assets/icons/icon_x_transparent.svg" alt="" />
+        </button>
+        <div class="success-icon" aria-hidden="true">
+          <img src="assets/icons/icon_success_state.svg" alt="" />
+        </div>
+        <div class="modal-body">
+          <div class="modal-message">
+            <h2 id="publication-modal-title">¡Prenda publicada!</h2>
+            <p>
+              Tu prenda ya está visible para otras familias<span
+                class="mobile-modal-period"
+                >.</span
+              >
+            </p>
+          </div>
+          <div class="modal-actions">
+            <a class="modal-primary-action" href="personal_area.html"
+              >Ver mi publicación</a
+            >
+            <a class="modal-catalog-link" href="index.html"
+              >Volver al catálogo</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/publish.js"></script>
+  </body>
+</html>

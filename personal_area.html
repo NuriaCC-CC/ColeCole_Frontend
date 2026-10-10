@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Área personal de ColeCole con el perfil y las publicaciones de la familia."
+    />
+    <title>Área personal | ColeCole</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/personal_area.css" />
+    <link rel="stylesheet" href="assets/css/desktop_header.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <header class="site-header">
+      <div class="mobile-header">
+        <div class="mobile-header-row">
+          <a
+            class="icon-button back-button"
+            href="index.html"
+            aria-label="Volver"
+          >
+            <img src="assets/icons/icon_arrow_left.png" alt="" />
+          </a>
+
+          <form class="mobile-search" role="search">
+            <label class="visually-hidden" for="profile-mobile-search"
+              >Buscar uniforme</label
+            >
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <input
+              id="profile-mobile-search"
+              type="search"
+              name="search"
+              placeholder="Buscar uniforme"
+            />
+          </form>
+
+          <a
+            class="icon-button cart-button"
+            href="cart.html"
+            aria-label="Ver carrito"
+          >
+            <img src="assets/icons/icon_shop_red.png" alt="" />
+          </a>
+
+          <button
+            class="icon-button menu-button"
+            type="button"
+            aria-label="Abrir menú"
+          >
+            <img src="assets/icons/icon_hamburger.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="desktop-header">
+        <a class="brand" href="index.html" aria-label="ColeCole, ir a inicio">
+          <img src="assets/images/colecole_logo.png" alt="ColeCole" />
+        </a>
+
+        <form class="desktop-search" role="search">
+          <div class="desktop-search-field">
+            <label class="visually-hidden" for="profile-desktop-search">
+              Buscar uniforme o una talla
+            </label>
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <input
+              id="profile-desktop-search"
+              type="search"
+              name="search"
+              placeholder="Buscar uniforme o una talla"
+            />
+          </div>
+          <span class="search-divider" aria-hidden="true"></span>
+          <button class="school-selector" type="button">
+            <img src="assets/icons/icon_school.png" alt="" />
+            <span>Colegio Padres Blancos</span>
+            <img
+              class="chevron-icon"
+              src="assets/icons/icon_chevron_up.png"
+              alt=""
+            />
+          </button>
+        </form>
+
+        <nav class="desktop-navigation" aria-label="Navegación principal">
+          <button class="header-navigation-item" type="button">
+            <img src="assets/icons/icon_heart.png" alt="" />
+            <span>Favoritos</span>
+          </button>
+          <a class="header-navigation-item" href="cart.html">
+            <span class="desktop-cart-icon">
+              <img src="assets/icons/icon_shop_red.png" alt="" />
+            </span>
+            <span>Carrito</span>
+          </a>
+          <button class="header-navigation-item" type="button">
+            <img src="assets/icons/icon_messenger.png" alt="" />
+            <span>Chat</span>
+          </button>
+          <a
+            class="desktop-avatar-link"
+            href="personal_area.html"
+            aria-label="Ver perfil"
+            aria-current="page"
+          >
+            <img src="assets/images/avatar.png" alt="" />
+          </a>
+          <a
+            class="button button-primary desktop-publish-button"
+            href="publish.html"
+          >
+            <span>Publicar</span>
+            <img src="assets/icons/icon_plus_transparent.png" alt="" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="profile-layout">
+      <aside class="profile-sidebar" aria-label="Navegación del perfil">
+        <nav>
+          <a href="index.html">
+            <img src="assets/icons/icon_house.png" alt="" />
+            <span>Inicio</span>
+          </a>
+          <a href="index.html#catalog">
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <span>Buscar</span>
+          </a>
+          <button type="button">
+            <img src="assets/icons/icon_heart.png" alt="" />
+            <span>Favoritos</span>
+          </button>
+          <a class="is-current" href="personal_area.html" aria-current="page">
+            <img src="assets/icons/icon_user.png" alt="" />
+            <span>Perfil</span>
+          </a>
+        </nav>
+      </aside>
+
+      <div class="profile-content">
+        <div class="profile-page-header">
+          <h1>Perfil</h1>
+          <button class="settings-button" type="button">
+            <span>Ajustes</span>
+            <img src="assets/icons/icon_settings_green.png" alt="" />
+          </button>
+        </div>
+
+        <section class="profile-summary" aria-labelledby="profile-name">
+          <div class="profile-top">
+            <div class="profile-identity">
+              <img
+                class="profile-avatar"
+                src="assets/images/avatar.png"
+                alt="Foto de perfil"
+              />
+              <div class="profile-information">
+                <h2 id="profile-name">Nombre y apellido</h2>
+                <p class="profile-detail">
+                  <img src="assets/icons/icon_school.png" alt="" />
+                  <span>Colegio Padres Blancos</span>
+                </p>
+                <p class="profile-detail">
+                  <img src="assets/icons/icon_star.png" alt="" />
+                  <span>4,8 · 12 valoraciones</span>
+                </p>
+                <p class="profile-description">
+                  Reutilizamos uniformes para darles una segunda vida
+                </p>
+              </div>
+            </div>
+
+            <a class="edit-profile-button" href="personal_data.html">
+              <span>Editar perfil</span>
+              <img src="assets/icons/icon_pen_green.png" alt="" />
+            </a>
+          </div>
+
+          <div class="profile-stats" aria-label="Resumen de actividad">
+            <div class="profile-stat profile-stat-publications">
+              <strong>8</strong>
+              <span>Publicaciones</span>
+            </div>
+            <div class="profile-stat profile-stat-sales">
+              <strong>3</strong>
+              <span>Ventas</span>
+            </div>
+            <div class="profile-stat profile-stat-swaps">
+              <strong>5</strong>
+              <span>Intercambios</span>
+            </div>
+            <div class="profile-stat profile-stat-reviews">
+              <strong>12</strong>
+              <span>Valoraciones</span>
+            </div>
+          </div>
+        </section>
+
+        <nav class="profile-tabs" aria-label="Contenido del perfil">
+          <button class="profile-tab is-current" type="button">
+            Publicaciones
+          </button>
+          <button class="profile-tab" type="button">Favoritos</button>
+          <button class="profile-tab" type="button">Valoraciones</button>
+        </nav>
+
+        <section class="recent-section" aria-labelledby="recent-title">
+          <div class="recent-heading">
+            <h2 id="recent-title">Recién añadidos</h2>
+            <button class="view-all-button" type="button">
+              Ver todos (114)
+            </button>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-media">
+                <a href="product_detail.html" aria-label="Ver Sudadera burdeos">
+                  <img
+                    class="product-image"
+                    src="assets/images/product/IMG_20260901_165643.jpg"
+                    alt="Sudadera burdeos del Colegio Padres Blancos"
+                  />
+                </a>
+                <button
+                  class="favorite-button"
+                  type="button"
+                  aria-label="Añadir Sudadera burdeos a favoritos"
+                  aria-pressed="false"
+                >
+                  <img src="assets/icons/icon_heart.png" alt="" />
+                </button>
+                <span class="offer-tag price-tag">€ 10,00</span>
+              </div>
+              <div class="product-info">
+                <h3><a href="product_detail.html">Sudadera burdeos</a></h3>
+                <p>Colegio Padres Blancos</p>
+                <ul class="product-labels" aria-label="Características">
+                  <li>Talla 6</li>
+                  <li>Como nueva</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">
+                <div class="product-image-frame">
+                  <img
+                    class="product-image"
+                    src="assets/images/product/02_camiseta.webp"
+                    alt="Camiseta blanca de manga corta del Colegio Padres Blancos"
+                  />
+                </div>
+                <button
+                  class="favorite-button"
+                  type="button"
+                  aria-label="Añadir Camiseta manga corta blanca a favoritos"
+                  aria-pressed="false"
+                >
+                  <img src="assets/icons/icon_heart.png" alt="" />
+                </button>
+                <span class="offer-tag exchange-tag">
+                  <img src="assets/icons/icon_change.png" alt="" />
+                  Intercambio
+                </span>
+              </div>
+              <div class="product-info">
+                <h3>Camiseta manga corta blanca.</h3>
+                <p>Colegio Padres Blancos</p>
+                <ul class="product-labels" aria-label="Características">
+                  <li>Talla S</li>
+                  <li>Buen estado</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">
+                <div class="product-image-frame">
+                  <img
+                    class="product-image"
+                    src="assets/images/product/04_calzona.webp"
+                    alt="Pantalón corto del Colegio Padres Blancos"
+                  />
+                </div>
+                <button
+                  class="favorite-button"
+                  type="button"
+                  aria-label="Añadir Pantalón corto a favoritos"
+                  aria-pressed="false"
+                >
+                  <img src="assets/icons/icon_heart.png" alt="" />
+                </button>
+                <span class="offer-tag exchange-tag">
+                  <img src="assets/icons/icon_change.png" alt="" />
+                  Intercambio
+                </span>
+              </div>
+              <div class="product-info">
+                <h3>Pantalón corto</h3>
+                <p>Colegio Padres Blancos</p>
+                <ul class="product-labels" aria-label="Características">
+                  <li>Talla 6</li>
+                  <li>Muy usado</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <nav class="mobile-bottom-navigation" aria-label="Navegación móvil">
+      <a href="index.html">
+        <img src="assets/icons/icon_house.png" alt="" />
+        <span>Inicio</span>
+      </a>
+      <a href="index.html#catalog">
+        <img src="assets/icons/icon_magnifying.png" alt="" />
+        <span>Buscar</span>
+      </a>
+      <a href="publish.html">
+        <img src="assets/icons/icon_plus.png" alt="" />
+        <span>Publicar</span>
+      </a>
+      <button type="button">
+        <img src="assets/icons/icon_messenger.png" alt="" />
+        <span>Chat</span>
+      </button>
+      <a class="is-current" href="personal_area.html" aria-current="page">
+        <img src="assets/icons/icon_user.png" alt="" />
+        <span>Perfil</span>
+      </a>
+    </nav>
+
+    <script src="assets/js/personal_area.js"></script>
+  </body>
+</html>

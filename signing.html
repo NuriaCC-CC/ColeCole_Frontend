@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ColeCole · Crear cuenta</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/signing.css" />
+  </head>
+  <body>
+    <main class="signing-page">
+      <div class="signing-card">
+        <div class="signing-card-inner">
+          <section
+            class="signing-visual"
+            aria-labelledby="signing-visual-title"
+          >
+            <div class="signing-visual-text">
+              <h1 id="signing-visual-title">
+                Pequeños gestos,<br />grandes historias
+              </h1>
+              <p>
+                Da una segunda vida a los uniformes escolares y forma parte de
+                una comunidad más sostenible.
+              </p>
+            </div>
+
+            <ul class="signing-benefits">
+              <li>
+                <img src="assets/icons/icon_euro.png" alt="" />
+                <p>Ahorra en lo que realmente importa</p>
+              </li>
+              <li>
+                <img src="assets/icons/icon_recycle.png" alt="" />
+                <p>Cuida el planeta, juntos llegamos más lejos</p>
+              </li>
+              <li>
+                <img src="assets/icons/icon_people.png" alt="" />
+                <p>Conecta con otras familias de tu colegio</p>
+              </li>
+            </ul>
+
+            <img
+              class="signing-uniforms"
+              src="assets/images/uniforme_signing.png"
+              alt=""
+            />
+          </section>
+
+          <section class="signing-form-panel" aria-labelledby="signing-title">
+            <h2 id="signing-title">Crear cuenta</h2>
+            <p class="signing-introduction">
+              Únete a ColeCole y da una segunda vida a los uniformes escolares
+            </p>
+
+            <form id="signing-form" class="signing-form">
+              <div class="signing-fields">
+                <div class="form-field">
+                  <label for="name">
+                    Nombre
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Introduce tu nombre"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="email">
+                    Email
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="nombre@email.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="password">
+                    Contraseña
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="password-control">
+                    <input
+                      id="password"
+                      name="password"
+                      type="password"
+                      autocomplete="new-password"
+                      placeholder="Crea tu contraseña"
+                      minlength="8"
+                      aria-describedby="password-help"
+                      required
+                    />
+                    <button
+                      class="password-toggle"
+                      type="button"
+                      data-target="password"
+                      aria-label="Mostrar contraseña"
+                      aria-pressed="false"
+                    >
+                      <img src="assets/icons/icon_eye.png" alt="" />
+                    </button>
+                  </div>
+                  <p id="password-help" class="field-help">
+                    Mínimo 8 caracteres, con una mayúscula y un número
+                  </p>
+                </div>
+
+                <div class="form-field">
+                  <label for="password-repeat">
+                    Repetir contraseña
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <div class="password-control">
+                    <input
+                      id="password-repeat"
+                      name="password-repeat"
+                      type="password"
+                      autocomplete="new-password"
+                      placeholder="Repite tu contraseña"
+                      minlength="8"
+                      required
+                    />
+                    <button
+                      class="password-toggle"
+                      type="button"
+                      data-target="password-repeat"
+                      aria-label="Mostrar contraseña"
+                      aria-pressed="false"
+                    >
+                      <img src="assets/icons/icon_eye.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <label class="legal-consent" for="legal-consent">
+                  <input
+                    id="legal-consent"
+                    name="legal-consent"
+                    type="checkbox"
+                    required
+                  />
+                  <span>
+                    He leído y acepto los
+                    <a class="pending-link" href="#">Términos de uso</a>
+                    y la
+                    <a class="pending-link" href="#">Política de privacidad</a>
+                  </span>
+                </label>
+              </div>
+
+              <div class="signing-actions">
+                <button class="button button-primary" type="submit">
+                  Crear cuenta
+                </button>
+
+                <div class="signing-divider" aria-hidden="true">
+                  <span></span>
+                  <small>o continúa con</small>
+                  <span></span>
+                </div>
+
+                <button class="button button-google" type="button">
+                  <img src="assets/icons/icon_google.png" alt="" />
+                  <span>Continuar con Google</span>
+                </button>
+              </div>
+
+              <div class="signing-switch">
+                <span>Ya tengo cuenta.</span>
+                <a href="login.html">Inicia sesión</a>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/signing.js"></script>
+  </body>
+</html>

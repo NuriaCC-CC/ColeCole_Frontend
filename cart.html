@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Carrito de compra de ColeCole" />
+    <title>Tu carrito | ColeCole</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/cart.css" />
+    <link rel="stylesheet" href="assets/css/desktop_header.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#cart-content">Saltar al contenido principal</a>
+
+    <header class="site-header">
+      <div class="mobile-header">
+        <button class="icon-button" type="button" aria-label="Volver" data-back>
+          <img src="assets/icons/icon_arrow_left.png" alt="" />
+        </button>
+
+        <form class="mobile-search" role="search">
+          <label class="visually-hidden" for="mobile-search-input"
+            >Buscar uniforme</label
+          >
+          <img src="assets/icons/icon_magnifying.png" alt="" />
+          <input
+            id="mobile-search-input"
+            type="search"
+            name="search"
+            placeholder="Buscar uniforme"
+          />
+        </form>
+
+        <a
+          class="icon-button cart-button"
+          href="cart.html"
+          aria-label="Ver carrito"
+          aria-current="page"
+        >
+          <img src="assets/icons/icon_shop_red.png" alt="" />
+        </a>
+
+        <button class="icon-button" type="button" aria-label="Abrir menú">
+          <img src="assets/icons/icon_hamburger.png" alt="" />
+        </button>
+      </div>
+
+      <div class="desktop-header">
+        <a class="brand" href="index.html" aria-label="ColeCole, ir a inicio">
+          <img src="assets/images/colecole_logo.png" alt="ColeCole" />
+        </a>
+
+        <form class="desktop-search" role="search">
+          <div class="desktop-search-field">
+            <label class="visually-hidden" for="desktop-search-input"
+              >Buscar uniforme o una talla</label
+            >
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <input
+              id="desktop-search-input"
+              type="search"
+              name="search"
+              placeholder="Buscar uniforme o una talla"
+            />
+          </div>
+          <span class="search-divider" aria-hidden="true"></span>
+          <button class="school-selector" type="button">
+            <img src="assets/icons/icon_school.png" alt="" />
+            <span>Colegio Padres Blancos</span>
+            <img
+              class="chevron-icon"
+              src="assets/icons/icon_chevron_up.png"
+              alt=""
+            />
+          </button>
+        </form>
+
+        <nav class="desktop-navigation" aria-label="Navegación principal">
+          <a href="index.html#catalog">
+            <img src="assets/icons/icon_heart.png" alt="" />
+            <span>Favoritos</span>
+          </a>
+          <a class="is-current" href="cart.html" aria-current="page">
+            <span class="desktop-cart-icon">
+              <img src="assets/icons/icon_shop_red.png" alt="" />
+            </span>
+            <span>Carrito</span>
+          </a>
+          <a href="chat.html">
+            <img src="assets/icons/icon_messenger.png" alt="" />
+            <span>Chat</span>
+          </a>
+          <a
+            class="desktop-avatar-link"
+            href="personal_area.html"
+            aria-label="Ver perfil"
+          >
+            <img src="assets/images/avatar.png" alt="" />
+          </a>
+          <a
+            class="button button-primary desktop-publish-button"
+            href="publish.html"
+          >
+            <span>Publicar</span>
+            <img src="assets/icons/icon_plus_transparent.png" alt="" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="cart-main" id="cart-content">
+      <header class="cart-heading">
+        <h1>Tu carrito</h1>
+        <p>
+          <span data-cart-count>3</span> <span data-cart-label>prendas</span>
+        </p>
+      </header>
+
+      <div class="cart-content">
+        <section class="cart-list" aria-label="Prendas del carrito">
+          <article class="cart-item" data-cart-item data-price="10">
+            <div class="seller-row">
+              <img
+                class="seller-avatar"
+                src="assets/images/avatar1.webp"
+                alt="Foto de Ana"
+              />
+              <div class="seller-information">
+                <p>Vendido por Ana</p>
+                <span>Colegio Padres Blancos</span>
+              </div>
+            </div>
+            <div class="product-row">
+              <img
+                class="cart-product-image"
+                src="assets/images/product/IMG_20260901_165631.jpg"
+                alt="Sudadera burdeos"
+              />
+              <div class="product-information">
+                <div class="product-copy">
+                  <h2>Sudadera burdeos</h2>
+                  <p>Talla 6 · Como nueva</p>
+                  <strong>10,00 €</strong>
+                </div>
+                <button
+                  class="delete-button"
+                  type="button"
+                  aria-label="Eliminar Sudadera burdeos del carrito"
+                  data-delete-item
+                >
+                  <img src="assets/icons/icon_delete.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cart-item" data-cart-item data-price="5">
+            <div class="seller-row">
+              <img
+                class="seller-avatar"
+                src="assets/images/avatar2.jpg"
+                alt="Foto de Pedro"
+              />
+              <div class="seller-information">
+                <p>Vendido por Pedro</p>
+                <span>Colegio Padres Blancos</span>
+              </div>
+            </div>
+            <div class="product-row">
+              <img
+                class="cart-product-image"
+                src="assets/images/product/06_uniforme.webp"
+                alt="Camiseta manga corta roja"
+              />
+              <div class="product-information">
+                <div class="product-copy">
+                  <h2>Camiseta manga corta roja</h2>
+                  <p>Talla 10 · Como nueva</p>
+                  <strong>5,00 €</strong>
+                </div>
+                <button
+                  class="delete-button"
+                  type="button"
+                  aria-label="Eliminar Camiseta manga corta roja del carrito"
+                  data-delete-item
+                >
+                  <img src="assets/icons/icon_delete.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cart-item" data-cart-item data-price="5">
+            <div class="seller-row">
+              <img
+                class="seller-avatar"
+                src="assets/images/avatar3.jpg"
+                alt="Foto de Marta"
+              />
+              <div class="seller-information">
+                <p>Vendido por Marta</p>
+                <span>Colegio Padres Blancos</span>
+              </div>
+            </div>
+            <div class="product-row">
+              <img
+                class="cart-product-image"
+                src="assets/images/product/04_calzona.webp"
+                alt="Pantalón corto"
+              />
+              <div class="product-information">
+                <div class="product-copy">
+                  <h2>Pantalón corto</h2>
+                  <p>Talla 8 · Como nueva</p>
+                  <strong>5,00 €</strong>
+                </div>
+                <button
+                  class="delete-button"
+                  type="button"
+                  aria-label="Eliminar Pantalón corto del carrito"
+                  data-delete-item
+                >
+                  <img src="assets/icons/icon_delete.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <aside class="order-summary" aria-labelledby="summary-title">
+          <h2 id="summary-title">Resumen del pedido</h2>
+          <div class="summary-row">
+            <span
+              ><span data-summary-count>3</span>
+              <span data-summary-label>prendas</span></span
+            >
+            <span data-summary-subtotal>20,00 €</span>
+          </div>
+          <hr />
+          <div class="summary-row summary-total">
+            <strong>Total</strong>
+            <strong data-summary-total>20,00 €</strong>
+          </div>
+          <button class="button button-primary checkout-button" type="button">
+            Continuar con la compra
+          </button>
+          <a class="button button-secondary continue-shopping" href="index.html"
+            >Seguir comprando</a
+          >
+        </aside>
+      </div>
+
+      <p
+        class="visually-hidden"
+        role="status"
+        aria-live="polite"
+        data-cart-status
+      ></p>
+    </main>
+
+    <nav class="mobile-bottom-navigation" aria-label="Navegación inferior">
+      <a href="index.html"
+        ><img src="assets/icons/icon_house.png" alt="" /><span>Inicio</span></a
+      >
+      <a href="index.html#catalog"
+        ><img src="assets/icons/icon_magnifying.png" alt="" /><span
+          >Buscar</span
+        ></a
+      >
+      <a href="publish.html"
+        ><img src="assets/icons/icon_plus.png" alt="" /><span>Publicar</span></a
+      >
+      <a href="chat.html"
+        ><img src="assets/icons/icon_messenger.png" alt="" /><span
+          >Chat</span
+        ></a
+      >
+      <a href="personal_area.html"
+        ><img src="assets/icons/icon_user.png" alt="" /><span>Perfil</span></a
+      >
+    </nav>
+
+    <script src="assets/js/cart.js"></script>
+  </body>
+</html>

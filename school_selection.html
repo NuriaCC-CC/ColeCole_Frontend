@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Selecciona tu colegio · ColeCole</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/school_selection.css" />
+    <link rel="stylesheet" href="assets/css/desktop_header.css" />
+  </head>
+  <body>
+    <div class="school-page">
+      <a class="skip-link" href="#main-content"
+        >Saltar al contenido principal</a
+      >
+
+      <header class="selection-mobile-header">
+        <button
+          class="header-icon-button back-button"
+          type="button"
+          aria-label="Volver"
+        >
+          <img src="assets/icons/icon_arrow_left.png" alt="" />
+        </button>
+
+        <form class="mobile-uniform-search" action="index.html" role="search">
+          <label class="visually-hidden" for="mobile-uniform-search"
+            >Buscar uniforme</label
+          >
+          <img src="assets/icons/icon_magnifying.png" alt="" />
+          <input
+            id="mobile-uniform-search"
+            name="search"
+            type="search"
+            placeholder="Buscar uniforme"
+          />
+        </form>
+
+        <a
+          class="header-icon-button mobile-cart-link"
+          href="cart.html"
+          aria-label="Ver carrito"
+        >
+          <img src="assets/icons/icon_shop_red.png" alt="" />
+        </a>
+
+        <button
+          class="header-icon-button menu-button"
+          type="button"
+          aria-label="Menú"
+          disabled
+        >
+          <img src="assets/icons/icon_hamburger.png" alt="" />
+        </button>
+      </header>
+
+      <header class="selection-desktop-header">
+        <a class="brand" href="index.html" aria-label="ColeCole, ir a inicio">
+          <img src="assets/images/colecole_logo.png" alt="ColeCole" />
+        </a>
+
+        <form class="desktop-uniform-search" action="index.html" role="search">
+          <div class="desktop-search-field">
+            <label class="visually-hidden" for="desktop-uniform-search">
+              Buscar uniforme o una talla
+            </label>
+            <img src="assets/icons/icon_magnifying.png" alt="" />
+            <input
+              id="desktop-uniform-search"
+              name="search"
+              type="search"
+              placeholder="Buscar uniforme o una talla"
+            />
+          </div>
+
+          <span class="search-divider" aria-hidden="true"></span>
+
+          <button class="school-selector" type="button" disabled>
+            <img src="assets/icons/icon_school.png" alt="" />
+            <span>Colegio Padres Blancos</span>
+            <img
+              class="chevron-icon"
+              src="assets/icons/icon_chevron_up.png"
+              alt=""
+            />
+          </button>
+        </form>
+
+        <nav class="desktop-navigation" aria-label="Navegación principal">
+          <span class="desktop-nav-item" aria-disabled="true">
+            <img src="assets/icons/icon_heart.png" alt="" />
+            <span>Favoritos</span>
+          </span>
+
+          <a class="desktop-nav-item desktop-cart-link" href="cart.html">
+            <span class="desktop-cart-icon">
+              <img src="assets/icons/icon_shop_red.png" alt="" />
+            </span>
+            <span>Carrito</span>
+          </a>
+
+          <span class="desktop-nav-item" aria-disabled="true">
+            <img src="assets/icons/icon_messenger.png" alt="" />
+            <span>Chat</span>
+          </span>
+
+          <a
+            class="desktop-avatar-link"
+            href="personal_area.html"
+            aria-label="Ver perfil"
+          >
+            <img src="assets/images/avatar.png" alt="" />
+          </a>
+
+          <a class="publish-button" href="publish.html">
+            <span>Publicar</span>
+            <img src="assets/icons/icon_plus_transparent.png" alt="" />
+          </a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="selection-page-main">
+        <section class="selection-panel" aria-labelledby="selection-title">
+          <div class="selection-content">
+            <div class="selection-main-content">
+              <div class="selection-title-and-search">
+                <h1 id="selection-title">Selecciona tu colegio</h1>
+                <p>Encuentra uniformes de tu colegio</p>
+
+                <form class="school-search-row" data-school-search>
+                  <div class="school-search-field">
+                    <label for="school-search">Buscar colegio</label>
+                    <input
+                      id="school-search"
+                      name="school"
+                      type="search"
+                      placeholder="Escribe el nombre de tu colegio"
+                    />
+                  </div>
+                  <button
+                    class="school-search-button"
+                    type="submit"
+                    aria-label="Buscar colegio"
+                  >
+                    <img src="assets/icons/icon_magnifying.png" alt="" />
+                  </button>
+                </form>
+              </div>
+
+              <section class="schools-section" aria-labelledby="schools-title">
+                <h2 id="schools-title">Tus colegios</h2>
+                <div class="school-list">
+                  <a
+                    class="school-option school-option--link"
+                    href="index.html"
+                    data-school="Padres Blancos"
+                  >
+                    <span class="school-badge">
+                      <img
+                        class="school-badge-image--cover"
+                        src="assets/images/schools/padres_blancos_badge.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="school-name">Padres Blancos</span>
+                  </a>
+
+                  <div
+                    class="school-option"
+                    data-school="Salesianos"
+                  >
+                    <span class="school-badge">
+                      <img
+                        src="assets/images/schools/salesianos_badge.webp"
+                        alt=""
+                      />
+                    </span>
+                    <span class="school-name">Salesianos</span>
+                  </div>
+
+                  <div
+                    class="school-option"
+                    data-school="Irlandesas"
+                  >
+                    <span class="school-badge">
+                      <img
+                        src="assets/images/schools/new_irlandesas_badge.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="school-name">Irlandesas</span>
+                  </div>
+
+                  <div
+                    class="school-option"
+                    data-school="Maristas"
+                  >
+                    <span class="school-badge">
+                      <img
+                        src="assets/images/schools/maristas_badge.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="school-name">Maristas</span>
+                  </div>
+
+                  <div
+                    class="school-option"
+                    data-school="Claret"
+                  >
+                    <span class="school-badge">
+                      <img
+                        src="assets/images/schools/claret_badge.jpg"
+                        alt=""
+                      />
+                    </span>
+                    <span class="school-name">Claret</span>
+                  </div>
+
+                  <div
+                    class="school-option"
+                    data-school="Santa Ana"
+                  >
+                    <span class="school-badge">
+                      <img
+                        src="assets/images/schools/santa_ana_badge.jpg"
+                        alt=""
+                      />
+                    </span>
+                    <span class="school-name">Santa Ana</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <section
+              class="request-school"
+              aria-labelledby="request-school-title"
+            >
+              <h2 id="request-school-title">¿No encuentras tu colegio?</h2>
+              <button type="button" disabled>Solicitar mi colegio</button>
+            </section>
+
+            <p
+              class="visually-hidden"
+              aria-live="polite"
+              data-search-status
+            ></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="selection-desktop-footer">
+        <div class="footer-social" aria-label="Redes sociales">
+          <a href="#" aria-label="Instagram">
+            <img src="assets/icons/icon_instagram.png" alt="" />
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="assets/icons/icon_facebook.png" alt="" />
+          </a>
+        </div>
+
+        <nav class="footer-navigation" aria-label="Enlaces del pie de página">
+          <span>Términos y condiciones</span>
+          <span>Política de privacidad</span>
+          <span>Ayuda</span>
+          <span>Sobre Colecole</span>
+        </nav>
+
+        <p>2026 © colecole</p>
+      </footer>
+    </div>
+
+    <script src="assets/js/school_selection.js"></script>
+  </body>
+</html>
